@@ -9,7 +9,7 @@ jobs:
       - run: |
           function cleanup()
           {
-              echo "Clean up on aisle 5..."
+              echo "Clean up on aisle ${CIRCLE_BRANCH}..."
           }
 
           trap cleanup EXIT
